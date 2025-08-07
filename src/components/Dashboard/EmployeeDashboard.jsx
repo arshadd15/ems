@@ -6,7 +6,7 @@ import { AuthContext } from "../../contexts/AuthProvider";
 
 const EmployeeDashboard = (props) => {
   return (
-    <div className="h-screen w-screen bg-[#1c1c1c] p-10">
+    <div className="h-screen w-screen bg-[#1c1c1c] p-0 lg:p-10">
       <Header changeUser={props.changeUser} data={props.data} />
       <TaskListNumbers data={props.data} />
       <TaskList data={props.data} />
