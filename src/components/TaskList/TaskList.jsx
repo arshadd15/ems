@@ -15,7 +15,7 @@ const TaskList = ({ data }) => {
   return (
     <div
       id="taskList"
-      className="h-[40%] lg:h-[55%] w-full flex items-center justify-start gap-5 py-5 mt-10 overflow-x-auto flex-nowrap"
+      className="h-[55%] w-full flex items-center justify-start gap-5 py-5 mt-10 overflow-x-auto flex-nowrap"
     >
       {currentEmployee.tasks.map((elem, idx) => {
         if (elem.active) {
