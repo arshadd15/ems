@@ -12,7 +12,9 @@ const CompleteTask = ({ data }) => {
       <h2 className="mt-5 text-2xl font-bold text-green-900">
         {data.taskTitle}
       </h2>
-      <p className="mt-3 text-green-700">{data.taskDescription}</p>
+      <p className="mt-3 text-green-700 h-28 overflow-y-auto">
+        {data.taskDescription}
+      </p>
       <div className="mt-6">
         <h2 className="w-full text-center text-green-800 text-2xl font-bold">
           ✅ Completed

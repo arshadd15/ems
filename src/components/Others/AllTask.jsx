@@ -10,13 +10,13 @@ const AllTask = () => {
       className="bg-[#1e1e2e] p-5 mt-3 overflow-auto rounded-lg shadow-lg"
     >
       <div className="bg-fuchsia-800 flex justify-between items-center mb-2 py-3 px-4 rounded-lg text-white">
-        <h2 className="font-medium text-lg w-1/5">Employee Name</h2>
-        <h2 className="font-medium text-lg w-1/5">New Task</h2>
-        <h2 className="font-medium text-lg w-1/5">Active Task</h2>
-        <h2 className="font-medium text-lg w-1/5">Completed Task</h2>
-        <h2 className="font-medium text-lg">Failed Task</h2>
+        <h2 className="font-medium text-md lg:text-lg w-1/5">Employee Name</h2>
+        <h2 className="font-medium text-md lg:text-lg w-1/5">New Task</h2>
+        <h2 className="font-medium text-md lg:text-lg w-1/5">Active Task</h2>
+        <h2 className="font-medium text-md lg:text-lg w-1/5">Completed Task</h2>
+        <h2 className="font-medium text-md lg:text-lg">Failed Task</h2>
       </div>
-      <div className="px-5">
+      <div>
         {userData?.employees?.map((elem, idx) => (
           <div
             key={idx}

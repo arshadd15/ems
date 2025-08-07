@@ -10,7 +10,9 @@ const FailedTask = ({ data }) => {
         <span className="text-gray-600 text-sm">{data.taskDate}</span>
       </div>
       <h2 className="mt-5 text-2xl font-bold text-red-900">{data.taskTitle}</h2>
-      <p className="mt-3 text-red-700">{data.taskDescription}</p>
+      <p className="mt-3 text-red-700 h-28 overflow-y-auto">
+        {data.taskDescription}
+      </p>
       <div className="mt-6">
         <h2 className="w-full text-center text-red-800 text-2xl font-bold">
           ❌ Failed

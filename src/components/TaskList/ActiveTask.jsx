@@ -79,7 +79,9 @@ const ActiveTask = ({ data }) => {
       <h2 className="mt-5 text-2xl font-bold text-purple-800">
         {data.taskTitle}
       </h2>
-      <p className="mt-3 text-purple-700">{data.taskDescription}</p>
+      <p className="mt-3 text-purple-700 h-28 overflow-y-auto">
+        {data.taskDescription}
+      </p>
       <div className="flex justify-between mt-6">
         <button
           onClick={completeTask}

@@ -48,7 +48,9 @@ const NewTask = ({ data }) => {
       <h2 className="mt-5 text-2xl font-bold text-gray-800">
         {data.taskTitle}
       </h2>
-      <p className="mt-3 text-gray-700">{data.taskDescription}</p>
+      <p className="mt-3 text-gray-700 h-28 overflow-y-auto">
+        {data.taskDescription}
+      </p>
       <div className="mt-6">
         <button
           onClick={acceptTask}

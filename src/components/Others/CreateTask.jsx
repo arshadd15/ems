@@ -40,12 +40,12 @@ export const CreateTask = () => {
   };
 
   return (
-    <div className="p-5 bg-[#1c1c1c] mt-5 rounded-lg shadow-xl">
+    <div className="p-2 lg:p-5 bg-[#1c1c1c] mt-5 rounded-lg shadow-xl">
       <form
         onSubmit={submitHandler}
-        className="flex w-full items-start justify-between flex-wrap px-5"
+        className="flex w-full items-start justify-between flex-wrap lg:px-5"
       >
-        <div className="w-1/2 space-y-1">
+        <div className="w-full lg:w-1/2 space-y-4 mb-4">
           <div className="flex flex-col">
             <label className="font-medium mb-2" htmlFor="title">
               Task Title
@@ -53,7 +53,7 @@ export const CreateTask = () => {
             <input
               value={taskTitle}
               onChange={(e) => setTaskTitle(e.target.value)}
-              className="tracking-wider py-1.5 px-3 w-4/5 rounded-lg outline-none bg-gray-800 text-white placeholder-gray-400 border border-gray-700 duration-200 focus:scale-[102%] focus:ring-2 focus:ring-blue-500 transition-all"
+              className="tracking-wider py-1.5 px-3 w-full lg:w-4/5 rounded-lg outline-none bg-gray-800 text-white placeholder-gray-400 border border-gray-700 duration-200 focus:scale-[102%] focus:ring-2 focus:ring-blue-500 transition-all"
               type="text"
               id="title"
               placeholder="Add the title of task"
@@ -66,7 +66,7 @@ export const CreateTask = () => {
             <input
               value={taskDate}
               onChange={(e) => setTaskDate(e.target.value)}
-              className="tracking-wider py-1.5 px-3 w-4/5 rounded-lg outline-none bg-gray-800 text-white placeholder-gray-400 border border-gray-700 duration-200 focus:scale-[102%] focus:ring-2 focus:ring-blue-500 transition-all"
+              className="tracking-wider py-1.5 px-3 w-full lg:w-4/5 rounded-lg outline-none bg-gray-800 text-white placeholder-gray-400 border border-gray-700 duration-200 focus:scale-[102%] focus:ring-2 focus:ring-blue-500 transition-all"
               type="date"
               id="date"
             />
@@ -79,7 +79,7 @@ export const CreateTask = () => {
               value={assignTo}
               onChange={(e) => setAssignTo(e.target.value)}
               id="assignTo"
-              className="tracking-wider py-1.5 px-3 w-4/5 rounded-lg outline-none bg-gray-800 text-white border border-gray-700 duration-200 focus:scale-[102%] focus:ring-2 focus:ring-blue-500 transition-all"
+              className="tracking-wider py-1.5 px-3 w-full lg:w-4/5 rounded-lg outline-none bg-gray-800 text-white border border-gray-700 duration-200 focus:scale-[102%] focus:ring-2 focus:ring-blue-500 transition-all"
             >
               <option value="">Select an employee</option>
               {userData?.employees?.map((emp) => (
@@ -96,7 +96,7 @@ export const CreateTask = () => {
             <input
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="tracking-wider py-1.5 px-3 w-4/5 rounded-lg outline-none bg-gray-800 text-white placeholder-gray-400 border border-gray-700 duration-200 focus:scale-[102%] focus:ring-2 focus:ring-blue-500 transition-all"
+              className="tracking-wider py-1.5 px-3 w-full lg:w-4/5 rounded-lg outline-none bg-gray-800 text-white placeholder-gray-400 border border-gray-700 duration-200 focus:scale-[102%] focus:ring-2 focus:ring-blue-500 transition-all"
               type="text"
               id="category"
               placeholder="design, dev, etc"
@@ -104,7 +104,7 @@ export const CreateTask = () => {
           </div>
         </div>
 
-        <div className="w-1/2 flex flex-col">
+        <div className="w-full lg:w-1/2 flex flex-col space-y-4">
           <label className="font-medium mb-2" htmlFor="description">
             Description
           </label>

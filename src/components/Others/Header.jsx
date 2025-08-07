@@ -6,7 +6,7 @@ const Header = ({ changeUser, data }) => {
     changeUser("");
   };
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between px-2">
       <h1 className="text-2xl font-medium">
         Hello <br />
         <span className="text-3xl font-semibold">
