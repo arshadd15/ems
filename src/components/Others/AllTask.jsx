@@ -13,10 +13,10 @@ const AllTask = () => {
         <h2 className="font-medium text-sm lg:text-lg w-1/6 lg:w-1/5">
           Employee Name
         </h2>
-        <h2 className="font-medium text-sm lg:text-lg w-1/6 lg:w-1/5">
+        <h2 className="font-medium text-sm lg:text-lg w-1/7 lg:w-1/5">
           New Task
         </h2>
-        <h2 className="font-medium text-sm lg:text-lg w-1/6 lg:w-1/5">
+        <h2 className="font-medium text-sm lg:text-lg w-1/7 lg:w-1/5">
           Active Task
         </h2>
         <h2 className="font-medium text-sm lg:text-lg w-1/6 lg:w-1/5">
