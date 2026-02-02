@@ -1,5 +1,3 @@
-import React from "react";
-
 const Header = ({ changeUser, data }) => {
   const logOutUser = () => {
     localStorage.setItem("loggedInUser", "");

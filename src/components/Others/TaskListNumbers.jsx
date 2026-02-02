@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthProvider";
 
 const TaskListNumbers = ({ data }) => {
   const [userData] = useContext(AuthContext);
 
   const currentEmployee = userData.employees.find(
-    (e) => data.firstName === e.firstName && data.email === e.email
+    (e) => data.firstName === e.firstName && data.email === e.email,
   );
   if (currentEmployee) {
     return (

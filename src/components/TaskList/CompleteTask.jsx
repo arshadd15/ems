@@ -1,5 +1,3 @@
-import React from "react";
-
 const CompleteTask = ({ data }) => {
   return (
     <div className="flex-shrink-0 h-full w-80 p-5 bg-blue-100 rounded-xl shadow hover:shadow-lg transition transform hover:scale-105">

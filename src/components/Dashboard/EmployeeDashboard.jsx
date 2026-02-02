@@ -1,8 +1,6 @@
-import React, { useContext } from "react";
 import Header from "../Others/Header";
 import TaskListNumbers from "../Others/TaskListNumbers";
 import TaskList from "../TaskList/TaskList";
-import { AuthContext } from "../../contexts/AuthProvider";
 
 const EmployeeDashboard = (props) => {
   return (
