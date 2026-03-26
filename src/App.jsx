@@ -27,6 +27,8 @@ const App = () => {
         "loggedInUser",
         JSON.stringify({ role: "admin", data: authData[0].admin }),
       );
+
+      return true;
     } else if (authData[0]) {
       const employee = authData[0].employees.find(
         (e) => email == e.email && password == e.password,
@@ -38,20 +40,20 @@ const App = () => {
           "loggedInUser",
           JSON.stringify({ role: "employee", data: employee }),
         );
+        return true;
       }
     } else {
       alert("Invalid credentials");
     }
+
+    return false;
   };
 
   const handleSignUp = (name, email, password) => {
     let employees = authData[0].employees;
     const exists = employees.some((emp) => emp.email === email);
-    if (email === "admin@example.com") {
-      alert("Email already exists");
-    }
-    if (exists) {
-      alert("Email already exists");
+    if (exists || email === "admin@example.com") {
+      return false;
     }
 
     const newFirstName = name;
@@ -109,6 +111,8 @@ const App = () => {
     employees.push(newEmployee);
     localStorage.setItem("employees", JSON.stringify(authData[0].employees));
     handleLogin(email, password);
+
+    return true;
   };
 
   return (
